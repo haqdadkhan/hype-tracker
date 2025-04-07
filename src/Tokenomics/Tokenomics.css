@@ -1,0 +1,29 @@
+.blue-heading {
+    font-size: 29px;
+    font-weight: 500;
+    color: #2DE6FF;
+}
+
+.token-card{
+    background: linear-gradient(#2187FF, #001896);
+    width: 263px;
+    height: 237px;
+}
+
+.token-img {
+    width: 64px;
+}
+.token-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.token-text{
+    font-size: 24px;
+    font-weight: 300;
+}
+.left-radius{
+    border-radius: 25px 0 0 25px;
+}
+.right-radius{
+    border-radius: 0 25px 25px 0;
+}

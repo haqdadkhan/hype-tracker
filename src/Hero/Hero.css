@@ -1,0 +1,6 @@
+.circle {
+    position: absolute;
+    width: 80px; /* Adjust size of circles */
+    height: 80px;
+    object-fit: contain;
+  }

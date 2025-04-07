@@ -1,0 +1,22 @@
+.feature-cards{
+    display: flex;
+    justify-content: center;
+}
+.card-img{
+    width: 232px;
+}
+.card-text{
+    font-size: 24px;
+}
+.comp-card{
+    width: 260px;
+    height: 260px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 40px 10px #21B9FF4D;
+}
+.comp-img{
+    width: 77px;
+}
+.comp-text{
+    font-size: 20px;
+}

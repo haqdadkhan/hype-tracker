@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.jost-normal {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* self btn  */
+.self-btn {
+  background: transparent;
+  color: #01BDF8;
+  font-size: 0.9rem;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 9999px; /* fully rounded pill btn */
+  box-shadow: inset 0 0 4px 4px #0163D680;
+  transition: all 0.3s ease;
+}
+.self-btn:hover {
+  background: linear-gradient( #0163D680);
+}
+.sec-heading{
+  font-size: 48px;
+  font-weight: 600;
+}

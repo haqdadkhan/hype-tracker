@@ -6,6 +6,7 @@ import Features from "./Features/Features";
 import Header from "./Header/Header";
 import About from "./About/About";
 import Tokenomics from "./Tokenomics/Tokenomics";
+import Upcoming from "./Upcoming/Upcoming";
 
 function App() {
   // initializing AOS
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Features />
       <Tokenomics/>
+      <Upcoming/>
       <div className=" d-flex flex-column vh-100 align-items-center justify-content-center">
         <div className="">
           <p data-aos="fade-up" className="text-danger">Hi</p>

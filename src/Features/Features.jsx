@@ -58,9 +58,9 @@ function Features() {
     <>
       <section id="features" className="py-5 mt-5">
         <div className="container">
-          <div className="d-flex flex-column align-items-center mb-5">
+          <div className="d-flex flex-column align-items-center text-center mb-5">
             <span className="self-btn">Key Features</span>
-            <h2 sec-heading>Key Features</h2>
+            <h2 className="sec-heading mt-2">Key Features</h2>
           </div>
           <div className="row g-4 d-flex justify-content-center">
             {featureCards.map((card) => (
@@ -81,10 +81,10 @@ function Features() {
             ))}
           </div>
         </div>
-        <div className="container pt-5 mt-5">
+        <div id="completed-features" className="container pt-5 mt-5">
           <div className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn">Completed Features</span>
-            <h2 sec-heading>Completed Features</h2>
+            <h2 className="sec-heading mt-2">Completed Features</h2>
           </div>
           <div className="row g-4 d-flex justify-content-center">
             {completedFeatures.map((card) => (

@@ -7,6 +7,8 @@ import Header from "./Header/Header";
 import About from "./About/About";
 import Tokenomics from "./Tokenomics/Tokenomics";
 import Upcoming from "./Upcoming/Upcoming";
+import Roadmap from "./Roadmap/Roadmap";
+import Footer from "./Footer/Footer";
 
 function App() {
   // initializing AOS
@@ -16,17 +18,14 @@ function App() {
   // content
   return (
     <div className="jost-normal" style={{ backgroundColor: "#0e0822" }}>
-      <Header/>
+      <Header />
       <Home />
       <About />
       <Features />
-      <Tokenomics/>
-      <Upcoming/>
-      <div className=" d-flex flex-column vh-100 align-items-center justify-content-center">
-        <div className="">
-          <p data-aos="fade-up" className="text-danger">Hi</p>
-        </div>
-      </div>
+      <Tokenomics />
+      <Upcoming />
+      <Roadmap/>
+      <Footer />
     </div>
   );
 }

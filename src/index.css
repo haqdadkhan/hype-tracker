@@ -5,7 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  text-decoration: none;
+  list-style: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -22,14 +29,17 @@
   font-size: 0.9rem;
   border: none;
   padding: 6px 20px;
-  border-radius: 9999px; /* fully rounded pill btn */
+  border-radius: 9999px;
+  /* fully rounded pill btn */
   box-shadow: inset 0 0 4px 4px #0163D680;
   transition: all 0.3s ease;
 }
+
 .self-btn:hover {
-  background: linear-gradient( #0163D680);
+  background: linear-gradient(#0163D680);
 }
-.sec-heading{
+
+.sec-heading {
   font-size: 48px;
   font-weight: 600;
 }

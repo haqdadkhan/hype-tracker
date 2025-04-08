@@ -75,20 +75,27 @@ function Upcoming() {
       <section id="upcoming-features" className="py-5 mt-5">
         <div className="container">
           <div className="d-flex flex-column align-items-center">
-            <div className="sec-width d-flex flex-column align-items-center text-center mb-5">
+            <div className="sec-width align-items-center text-center mb-5">
               <span className="self-btn">Features</span>
-              <h2 className='sec-heading'>Hype Tracker <br />Upcoming Features</h2>
+              <h2 className='sec-heading mt-2'>Hype Tracker <br />Upcoming Features</h2>
               <p className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
+
           {upcomingFeatures.map((feature) => (
-            <div className="row">
-              <div className="col-md-6 up-card-img">
-                <img src={feature.img} alt="Feature icon" />
+              <div key={feature.id} className="row mb-5 align-items-center flex-column flex-md-row">
+              <div className="col-md-5 up-card-img position-relative">
+                <img
+                  src={feature.img}
+                  alt="Feature icon"
+                  className="img-fluid rounded-3"
+                />
+                <span>{feature.id}</span>
               </div>
-              <div className="col-md-6 px-5 align-content-center">
+              <div className="col-md-6 px-md-5 align-self-center mt-4 mt-md-0">
                 <span className='self-btn'>Features</span>
-                <h2 className='feat-heading mt-5'>{feature.title}</h2>
+                <h2 className='feat-heading mt-3'>{feature.title}</h2>
+                <p className="mt-3 sec-para">{feature.content}</p>
               </div>
             </div>
           ))}

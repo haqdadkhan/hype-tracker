@@ -2,28 +2,91 @@
     font-size: 29px;
     font-weight: 500;
     color: #2DE6FF;
-}
+  }
 
-.token-card{
+  .token-card {
     background: linear-gradient(#2187FF, #001896);
     width: 263px;
     height: 237px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 16px; Soft default rounding */
+    transition: transform 0.3s ease;
+  }
 
-.token-img {
+  .token-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .token-img {
     width: 64px;
-}
-.token-title{
-    font-size: 30px;
-    font-weight: 600;
-}
-.token-text{
+  }
+
+  .card-title {
     font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .card-text {
+    font-size: 18px;
     font-weight: 300;
-}
-.left-radius{
+    color: #fff;
+  }
+
+  .left-radius {
     border-radius: 25px 0 0 25px;
-}
-.right-radius{
+  }
+
+  .right-radius {
     border-radius: 0 25px 25px 0;
-}
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .token-card {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      padding: 20px 10px;
+      margin: auto;
+    }
+
+    .left-radius, .right-radius, .token-card {
+      border-radius: 16px; /* Remove side-specific radius for mobile */
+    }
+
+    .blue-heading {
+      font-size: 24px;
+    }
+
+    .card-title {
+      font-size: 20px;
+    }
+
+    .card-text {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .token-card {
+      width: 100%;
+      max-width: 90%;
+      padding: 20px 15px;
+    }
+
+    .blue-heading {
+      font-size: 20px;
+    }
+
+    .card-title {
+      font-size: 18px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }

@@ -81,7 +81,7 @@ function Features() {
             ))}
           </div>
         </div>
-        <div id="completed-features" className="container pt-5 mt-5">
+        <div id="completed-features" className="container mt-5">
           <div className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn">Completed Features</span>
             <h2 className="sec-heading mt-2">Completed Features</h2>

@@ -34,7 +34,7 @@
     box-shadow: inset 0 0 45px 8px #306AFF4D;
     width: 100%;
     max-width: 504px;
-    max-height: 338px;
+    max-height: 420px;
     border-radius: 25px; /* fixed: previously you wrote 'border-radius: 50;' which is invalid */
 }
 

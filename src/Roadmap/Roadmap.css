@@ -1,0 +1,41 @@
+.roadmap-phases{
+    position: relative;
+    display: flex;
+    height: 590px;
+}
+.abs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.phase {
+    max-width: 250px;
+}
+.phase div img{
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+.phase span img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+.phase p{
+    font-size: 18px;
+    font-weight: 200;
+}
+.phase-1 {
+    top: 1px;
+    left: 1px;
+}
+.phase-2 {
+    bottom: 120px;
+    left: 350px;
+}
+.phase-3 {
+    top: 1px;
+    right: 350px;
+}
+.phase-4 {
+    bottom: 120px;
+    right: 1px;
+}

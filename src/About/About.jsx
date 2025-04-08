@@ -24,7 +24,6 @@ function About() {
                 decisions and stay ahead of the curve.
               </p>
             </div>
-
           </div>
         </div>
       </section>

@@ -17,6 +17,9 @@ function Header() {
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <a className="nav-link" href="#home">
+            Home
+          </a>
           <a className="nav-link" href="#about">
             About
           </a>

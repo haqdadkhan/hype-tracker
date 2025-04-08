@@ -12,7 +12,7 @@ const tokens = [
 
 function Tokenomics() {
   return (
-    <section id="tokenomics" className="py-5 mt-5">
+    <section id="tokenomics" className="mt-5">
       <div className="container">
         <div className="d-flex flex-column align-items-center text-center mb-5">
           <span className="self-btn">Tokenomics</span>

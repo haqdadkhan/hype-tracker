@@ -3,7 +3,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <footer className="footer-wrapper">
+    <footer className="overflow-hidden">
       <div className="container">
         {/* Top Section */}
         <div className="row p-3 p-md-5 before-footer mb-4 mb-md-5">

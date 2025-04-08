@@ -1,6 +1,33 @@
 .circle {
-    position: absolute;
-    width: 80px; /* Adjust size of circles */
-    height: 80px;
-    object-fit: contain;
-  }
+  position: absolute;
+  width: 80px;
+  /* Adjust size of circles */
+  height: 80px;
+  object-fit: contain;
+}
+
+.self-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.self-container::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* move it up */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 100px;
+  height: 100px;
+  background: red; /* same as page background */
+  border-bottom-right-radius: 25px;
+  z-index: 2;
+}
+.hero-btn{
+  background: linear-gradient(#07CDFF, #0E8BFF);
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+}

@@ -1,17 +1,21 @@
 .sec-para {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-top: 1rem;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 1rem;
 }
 
 /* Add responsiveness */
 .about-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  width: 100%;
+  max-width: 690px;
+  height: auto;
 }
 
 @media (max-width: 991px) {
+  .about-img {
+    max-width: 536px;
+  }
+
   .sec-heading {
     font-size: 2rem;
   }
@@ -27,7 +31,10 @@
 }
 
 @media (max-width: 576px) {
-  .sec-heading {
+  .about-img {
+    max-width: 516px;
+  }
+.sec-heading {
     font-size: 1.8rem;
   }
 

@@ -77,24 +77,24 @@ function Upcoming() {
           {/* upside section  */}
           <div className="d-flex flex-column align-items-center">
             <div className="sec-width align-items-center text-center mb-5">
-              <span className="self-btn">Features</span>
+              <span className="self-btn">Upcoming Features</span>
               <h2 className='sec-heading mt-2'>Hype Tracker <br />Upcoming Features</h2>
               <p className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
           {/* upcoming features  */}
           {upcomingFeatures.map((feature) => (
-            <div key={feature.id} className="row mb-5 align-items-center justify-content-between flex-column flex-md-row">
-              <div className="col-md-6 up-card-img position-relative">
+            <div key={feature.id} className="row up-card mb-4 mb-md-5 align-items-center justify-content-between text-center text-md-start flex-column flex-md-row">
+              <div className="up-card-img col-md-6 position-relative">
                 <img
                   src={feature.img}
                   alt="Feature icon"
-                  className="img-fluid rounded-3"
+                  className="img rounded-3"
                 />
               </div>
-              <div className="col-md-6 px-md-5 align-self-center mt-4 mt-md-0">
-                <span className='self-btn'>Features</span>
-                <h2 className='feat-heading mt-3'>{feature.title}</h2>
+              <div className="col-md-6 px-md-5 align-self-center mt-2 mt-md-4">
+                <span className='self-btn d-none d-md-inline'>Features</span>
+                <h2 className='feat-heading mt-2 mt-md-3'>{feature.title}</h2>
                 <p className="mt-3 sec-para">{feature.content}</p>
               </div>
             </div>

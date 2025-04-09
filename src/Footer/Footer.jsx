@@ -40,17 +40,17 @@ function Footer() {
             <h5 className="section-title">Company</h5>
             <div className="d-flex flex-column">
               <a href="#about" className='footer-links text-decoration-none'>About</a>
-              <a href="#features" className='footer-links text-decoration-none'>Key Features</a>
-              <a href="#completed-features" className='footer-links text-decoration-none'>Completed Features</a>
+              <a href="#tokenomics" className='footer-links text-decoration-none'>Tokenomics</a>
+              <a href="#roadmap" className='footer-links text-decoration-none'>Roadmap</a>
             </div>
           </div>
 
           <div className="col-6 col-md-2">
-            <h5 className="section-title invisible">Links</h5>
+            <h5 className="section-title">Features</h5>
             <div className="d-flex flex-column">
+              <a href="#features" className='footer-links text-decoration-none'>Key Features</a>
+              <a href="#completed-features" className='footer-links text-decoration-none'>Completed Features</a>
               <a href="#upcoming-features" className='footer-links text-decoration-none'>Upcoming Features</a>
-              <a href="#tokenomics" className='footer-links text-decoration-none'>Tokenomics</a>
-              <a href="#roadmap" className='footer-links text-decoration-none'>Roadmap</a>
             </div>
           </div>
 

@@ -59,12 +59,12 @@ function Features() {
       <section id="features" className="py-5 mt-5">
         <div className="container">
           <div className="d-flex flex-column align-items-center mb-5">
-            <span className="self-btn">Key Features</span>
+            <span className="self-btn mb-2">Key Features</span>
             <h2 className="sec-heading">Key Features</h2>
           </div>
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center gap-5">
             {featureCards.map((card) => (
-              <div key={card.id} className="col-sm-6 col-lg-3">
+              <div key={card.id} className="feature-card col-sm-6 col-lg-3">
                 <div className="h-100 border-0 bg-transparent">
                   <div className="text-center p-2">
                     <img
@@ -81,14 +81,14 @@ function Features() {
             ))}
           </div>
         </div>
-        <div className="container pt-5 mt-5">
+        <div id="completed-features" className="container pt-5 mt-5">
           <div className="d-flex flex-column align-items-center mb-5">
-            <span className="self-btn">Completed Features</span>
+            <span className="self-btn mb-2">Completed Features</span>
             <h2 className="sec-heading">Completed Features</h2>
           </div>
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center gap-5">
             {completedFeatures.map((card) => (
-              <div key={card.id} className="comp-card col-md-6 m-2 col-lg-3">
+              <div key={card.id} className="comp-card col-sm-6 col-lg-3">
                 <div className="h-100 bg-transparent">
                   <div className="text-center p-4">
                     <img

@@ -29,16 +29,33 @@
     text-align: center;
 }
 
-.up-card-img img {
-    width: 100%;
-    max-width: 654px;
-    max-height: 585px;
+.up-card-img img:hover {
+    box-shadow: inset 0 0 90px 4px #306AFF4D;
+    transition: all 0.3s ease;
 }
 
-/* Responsive tweaks */
+.up-card-img img {
+    width: 100%;
+    max-width: 580px;
+    max-height: 450px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .feat-heading{
+        font-size: 32px;
+    }
+    .sec-para{
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 768px) {
+    .up-card :nth-child(2){
+        max-width: 380px;
+    }
     .up-card-img img {
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 

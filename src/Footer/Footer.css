@@ -6,7 +6,8 @@
 
   /* Left Side */
   .left-side .join-title {
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
+    /* 40px */
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -20,19 +21,20 @@
   }
 
   .left-side .join-subtitle {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     color: rgba(255, 255, 255, 0.8);
   }
 
   /* Buttons */
   .footer-btn {
     background: linear-gradient(#208CBE, #0C304D);
+    color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     border: none;
     font-size: 1rem;
     box-shadow: 0 4px 56px 3px #1DA1ED59;
-    color: white;
     transition: transform 0.3s ease;
     width: 100%;
     max-width: 250px;
@@ -41,9 +43,9 @@
   .footer-btn-w {
     background: linear-gradient(#f0efef, #ececec);
     padding: 0.75rem 1.5rem;
+    color: black;
     border-radius: 50px;
     border: none;
-    color: black;
     font-size: 1rem;
     box-shadow: 0 4px 56px 3px #C8B0F733;
     transition: transform 0.3s ease;
@@ -51,8 +53,18 @@
     max-width: 250px;
   }
 
-  .footer-btn:hover, .footer-btn-w:hover {
-    transform: translateY(-3px);
+  .footer-btn:hover {
+    background: linear-gradient(#f0efef, #ececec);
+    color: black;
+    box-shadow: 0 4px 56px 3px #C8B0F733;
+    transition: all 0.3s ease;
+  }
+
+  .footer-btn-w:hover {
+    background: linear-gradient(#208CBE, #0C304D);
+    color: white;
+    box-shadow: 0 4px 56px 3px #1DA1ED59;
+    transition: all 0.3s ease;
   }
 
   /* Links Section */
@@ -92,27 +104,34 @@
   /* Copyright */
   .copyright {
     font-weight: 300;
-    font-size: 0.8125rem; /* 13px */
+    font-size: 0.8125rem;
+    /* 13px */
     color: #CFEFFA;
   }
 
   /* Responsive Adjustments */
   @media (min-width: 768px) {
     .left-side .join-title {
-      font-size: 3.5rem; /* 56px */
+      font-size: 3.5rem;
+      /* 56px */
     }
 
-    .footer-btn, .footer-btn-w {
-      padding: 0.9375rem 2.5rem; /* 15px 40px */
-      font-size: 1.25rem; /* 20px */
+    .footer-btn,
+    .footer-btn-w {
+      padding: 0.9375rem 2.5rem;
+      /* 15px 40px */
+      font-size: 1.25rem;
+      /* 20px */
     }
 
     .footer-btn-w {
-      padding: 0.9375rem 4.25rem; /* 15px 68px */
+      padding: 0.9375rem 4.25rem;
+      /* 15px 68px */
     }
 
     .footer-links {
-      font-size: 1.0625rem; /* 17px */
+      font-size: 1.0625rem;
+      /* 17px */
     }
   }
 
@@ -125,7 +144,8 @@
       font-size: 1rem;
     }
 
-    .footer-btn, .footer-btn-w {
+    .footer-btn,
+    .footer-btn-w {
       max-width: 100%;
     }
   }

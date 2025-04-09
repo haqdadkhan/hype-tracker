@@ -32,39 +32,50 @@ function Hero() {
         </div>
 
         {/* Downside Section with content */}
-        <div className="downside">
+        <div className="downside py-4 py-md-5">
           <div className="container">
+            {/* Top Text Row */}
             <div className="row mb-4 mb-md-5">
-              <div className="col-12 col-md-6 mb-3 mb-md-0">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
+              <div className="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-start">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
+                </p>
               </div>
-              <div className="col-12 col-md-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
+              <div className="col-12 col-md-6 text-center text-md-end">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
+                </p>
               </div>
             </div>
-            <div className='hero-content text-center'>
-              <h1 className='hero-heading mb-4 mb-md-5'>
+
+            {/* Hero Content */}
+            <div className='hero-content text-center px-2 px-md-0'>
+              <h1 className='hero-heading mb-4 mb-md-5 display-4 display-md-3 fw-bold'>
                 Empowering Your Crypto <br className="d-none d-md-block" />
-                <span>Trading Experience</span>
+                <span className="text-primary">Trading Experience</span>
               </h1>
               <div className="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center">
-                <button className='hero-btn'>Try the Bot</button>
-                <button className='hero-btn-w'>Buy Now</button>
+                <button className='hero-btn px-4 py-2 px-md-5 py-md-3'>
+                  Try the Bot
+                </button>
+                <button className='hero-btn-w px-4 py-2 px-md-5 py-md-3'>
+                  Buy Now
+                </button>
               </div>
             </div>
-            <div className="platforms row g-3 g-md-4 mt-5">
-              <div className="col-6 col-md-3 d-flex justify-content-center">
-                <img src={P1} className="img-fluid platform-img" alt="Uniswap" />
-              </div>
-              <div className="col-6 col-md-3 d-flex justify-content-center">
-                <img src={P2} className="img-fluid platform-img" alt="Etherscan" />
-              </div>
-              <div className="col-6 col-md-3 d-flex justify-content-center">
-                <img src={P3} className="img-fluid platform-img" alt="Dextools" />
-              </div>
-              <div className="col-6 col-md-3 d-flex justify-content-center">
-                <img src={P4} className="img-fluid platform-img" alt="CoinMarketCap" />
-              </div>
+
+            {/* Platforms */}
+            <div className="platforms row g-3 g-md-4 mt-4 mt-md-5">
+              {[P1, P2, P3, P4].map((platform, index) => (
+                <div key={index} className="col-6 col-md-3 d-flex justify-content-center">
+                  <img
+                    src={platform}
+                    className="img-fluid platform-img"
+                    alt={`Platform ${index + 1}`}
+                    style={{ maxHeight: '60px', width: 'auto' }}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

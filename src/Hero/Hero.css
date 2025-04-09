@@ -44,7 +44,7 @@ bottom: 1; }
 left: 50%;
 bottom: 1; }
 /* Position decorative elements */
-/* .eclipse-large {
+.eclipse-large {
   width: 300px;
   top: 50%;
   left: 10%;
@@ -92,7 +92,7 @@ bottom: 1; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
 /* Downside Section */
 .downside {
@@ -177,9 +177,17 @@ bottom: 1; }
   box-shadow: 0 4px 56px 3px rgba(200, 176, 247, 0.2);
 }
 
-.hero-btn:hover,
+.hero-btn:hover{
+  background: linear-gradient(#f0efef, #ececec);
+  color: black;
+  box-shadow: 0 4px 56px 3px rgba(200, 176, 247, 0.2);
+  transition: all 0.3s;
+}
 .hero-btn-w:hover {
-  transform: translateY(-3px);
+  background: linear-gradient(#07CDFF, #0E8BFF);
+  color: white;
+  box-shadow: 0 4px 56px 3px rgba(98, 29, 237, 0.35);
+  transition: all 0.3s;
 }
 
 @media (min-width: 768px) {

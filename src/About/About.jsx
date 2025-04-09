@@ -8,10 +8,10 @@ function About() {
       <section id="about" className="py-5 mt-5">
         <div className="container">
           <div className="row d-flex flex-column-reverse flex-lg-row text-white align-items-center">
-          <div className="col-lg-6 d-flex justify-content-center">
+          <div className="col-lg-7 d-flex justify-content-center">
               <img src={AboutImg} alt="About" className="about-img" />
             </div>
-            <div className="col-lg-6 text-center text-lg-start mt-4 mt-lg-0">
+            <div className="col-lg-5 text-center text-lg-start mt-4 mt-lg-0">
               <span className="self-btn">About Us</span>
               <h1 className="sec-heading my-2">Introducing Hype Tracker</h1>
               <p className="sec-para">

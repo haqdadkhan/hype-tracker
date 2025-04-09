@@ -12,31 +12,36 @@ const roadmaps = [
     id: 1,
     img: P1,
     title: "Phase 01",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam."
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam.",
+    class: "phase-1"
   },
   {
     id: 2,
     img: P2,
     title: "Phase 02",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam."
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam.",
+    class: "phase-2"
   },
   {
     id: 3,
     img: P3,
     title: "Phase 03",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam."
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam.",
+    class: "phase-3"
   },
   {
     id: 4,
     img: P4,
     title: "Phase 04",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam."
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga vel consectetur totam dolorum nam.",
+    class: "phase-4"
   },
 ];
+
 function Roadmap() {
   return (
     <>
-      <section id="roadmap" className="">
+      <section id="roadmap" className="mb-5">
         <div className="container">
           <div className="d-flex flex-column align-items-center">
             <div className="sec-width align-items-center text-center mb-5">
@@ -46,38 +51,21 @@ function Roadmap() {
             </div>
           </div>
           <div className="roadmap-phases">
-            <div className="phase phase-1 abs">
-              <div>
-                <img src={P1} alt="" />
+            {roadmaps.map((roadmap) => {
+              return <div key={roadmap.id} className={`phase ${roadmap.class} abs`}>
+                <div>
+                  <img src={roadmap.img} alt="" />
+                  <div className="arrow abs">
+                    <img src={arrow} alt="" />
+                  </div>
+                </div>
+                <div>
+                  <span><img src={framer} alt="" /></span>
+                  <h5>{roadmap.title}</h5>
+                  <p>{roadmap.content}</p>
+                </div>
               </div>
-              <span><img src={framer} alt="" /></span>
-              <h5>Phase 01</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, animi aliquid consequuntur corporis necessitatibus culpa.</p>
-            </div>
-            <div className="phase phase-2 abs">
-              <div>
-                <img src={P2} alt="" />
-              </div>
-              <span><img src={framer} alt="" /></span>
-              <h5>Phase 02</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, animi aliquid consequuntur corporis necessitatibus culpa.</p>
-            </div>
-            <div className="phase phase-3 abs">
-              <div>
-                <img src={P3} alt="" />
-              </div>
-              <span><img src={framer} alt="" /></span>
-              <h5>Phase 03</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, animi aliquid consequuntur corporis necessitatibus culpa.</p>
-            </div>
-            <div className="phase phase-4 abs">
-              <div>
-                <img src={P4} alt="" />
-              </div>
-              <span><img src={framer} alt="" /></span>
-              <h5>Phase 04</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, animi aliquid consequuntur corporis necessitatibus culpa.</p>
-            </div>
+            })}
           </div>
         </div>
       </section>

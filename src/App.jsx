@@ -23,7 +23,7 @@ function App() {
       <Features />
       <Tokenomics />
       <Upcoming />
-      {/* <Roadmap/> */}
+      <Roadmap/>
       <Footer />
     </>
   );

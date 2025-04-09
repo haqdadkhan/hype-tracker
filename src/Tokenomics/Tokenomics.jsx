@@ -23,8 +23,7 @@ function Tokenomics() {
             {tokens.map((token) => (
               <div
                 key={token.id}
-                className={`token-card ${token.id === 1 ? 'left-radius' : token.id === 4 ? 'right-radius' : ''
-                  } col-sm-y col-lg-3 m-2`}
+                className={`token-card col-sm-6 col-lg-3 m-2 ${token.id === 1 ? 'left-radius' : token.id === 4 ? 'right-radius' : ''}`}
               >
                 <div className="bg-transparent text-center p-4">
                   <img src={token.img} alt="Feature icon" className="mb-4 token-img" />

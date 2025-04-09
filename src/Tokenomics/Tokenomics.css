@@ -6,12 +6,14 @@
 
   .token-card {
     background: linear-gradient(#2187FF, #001896);
-    width: 263px;
+    width: 260px;
     height: 237px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
+    text-align: center;
     /* border-radius: 16px; Soft default rounding */
     transition: transform 0.3s ease;
   }
@@ -47,8 +49,8 @@
   /* Responsive Styles */
   @media (max-width: 992px) {
     .token-card {
-      width: 100%;
-      max-width: 300px;
+      max-width: 260px;
+      max-height: 238px;
       height: auto;
       padding: 20px 10px;
       margin: auto;
@@ -71,11 +73,10 @@
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     .token-card {
-      width: 100%;
-      max-width: 90%;
-      padding: 20px 15px;
+      max-width: 260px;
+      max-height: 238px;
     }
 
     .blue-heading {
@@ -84,6 +85,25 @@
 
     .card-title {
       font-size: 18px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 576px) {
+    .token-card {
+      max-width: 260px;
+      max-height: 238px;
+      padding: 20px 15px;
+    }
+
+    .blue-heading {
+      font-size: 18px;
+    }
+
+    .card-title {
+      font-size: 16px;
     }
 
     .card-text {

@@ -8,33 +8,62 @@ import PurpleCircle from "../assets/home/purple-circle.png"
 import BlueCircle from "../assets/home/blue-circle.png"
 import Dots from "../assets/home/white-dots.png"
 import Logo from "../assets/logo.png"
+import P1 from "../assets/home/uniswap.png"
+import P2 from "../assets/home/etherscan.png"
+import P3 from "../assets/home/dextools.png"
+import P4 from "../assets/home/coinmarketcap.png"
 
 function Hero() {
   return (
     <>
-      <section id='home' className='mb-5'>
-        <div className="container">
-          <div className="d-flex justify-content-center align-items-center position-relative overflow-hidden" style={{ height: "410px" }}>
-            <img src={LargeEclipse} alt="" className="position-absolute" />
-            <img src={ShortEclipse} alt="" className="position-absolute" />
-            <img src={BlueEclipse} alt="" className="position-absolute" />
-            <img src={GreenEclipse} alt="" className="position-absolute" />
-            <img src={PurpleCircle} alt="" className="position-absolute" />
-            <img src={BlueCircle} alt="" className="position-absolute" />
-            <img src={Logo} alt="" className="position-absolute" />
+      <section id='home' className='hero-section'>
+        {/* Upside Section with decorative elements */}
+        <div data-aos="fade-up" className="upside">
+          <div className="upside-container position-relative">
+            <img src={LargeEclipse} alt="" className="position-absolute eclipse-large" />
+            <img src={ShortEclipse} alt="" className="position-absolute eclipse-short" />
+            <img src={BlueEclipse} alt="" className="position-absolute blue-dots" />
+            <img src={GreenEclipse} alt="" className="position-absolute green-dots" />
+            <img src={PurpleCircle} alt="" className="position-absolute purple-circle" />
+            <img src={BlueCircle} alt="" className="position-absolute blue-circle" />
+            <img src={Dots} alt="" className="position-absolute white-dots" />
+            <img src={Logo} alt="Logo" className="position-absolute logo" />
           </div>
-          <div className="curve">
-            <div className="self-container">
-              <div className="row">
-                <div className="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.</div>
-                <div className="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.</div>
+        </div>
+
+        {/* Downside Section with content */}
+        <div className="downside">
+          <div className="container">
+            <div className="row mb-4 mb-md-5">
+              <div className="col-12 col-md-6 mb-3 mb-md-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
+              </div>
+              <div className="col-12 col-md-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
               </div>
             </div>
-            <div className='d-flex flex-column text-center'>
-              <h1>Empowering Your Crypto Trading Experience</h1>
-              <div className="d-flex gap-3 align-content-center justify-content-md-center align-items-md-end">
+            <div className='hero-content text-center'>
+              <h1 className='hero-heading mb-4 mb-md-5'>
+                Empowering Your Crypto <br className="d-none d-md-block" />
+                <span>Trading Experience</span>
+              </h1>
+              <div className="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center">
                 <button className='hero-btn'>Try the Bot</button>
                 <button className='hero-btn-w'>Buy Now</button>
+              </div>
+            </div>
+            <div className="platforms row g-3 g-md-4 mt-5">
+              <div className="col-6 col-md-3 d-flex justify-content-center">
+                <img src={P1} className="img-fluid platform-img" alt="Uniswap" />
+              </div>
+              <div className="col-6 col-md-3 d-flex justify-content-center">
+                <img src={P2} className="img-fluid platform-img" alt="Etherscan" />
+              </div>
+              <div className="col-6 col-md-3 d-flex justify-content-center">
+                <img src={P3} className="img-fluid platform-img" alt="Dextools" />
+              </div>
+              <div className="col-6 col-md-3 d-flex justify-content-center">
+                <img src={P4} className="img-fluid platform-img" alt="CoinMarketCap" />
               </div>
             </div>
           </div>

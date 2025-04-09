@@ -58,15 +58,15 @@ function Features() {
     <>
       <section id="features" className="py-5 mt-5">
         <div className="container">
-          <div className="d-flex flex-column align-items-center text-center mb-5">
+          <div className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn">Key Features</span>
-            <h2 className="sec-heading mt-2">Key Features</h2>
+            <h2 className="sec-heading">Key Features</h2>
           </div>
-          <div className="row g-4 d-flex justify-content-center">
+          <div className="row d-flex justify-content-center">
             {featureCards.map((card) => (
-              <div key={card.id} className="col-md-6 col-lg-3">
+              <div key={card.id} className="col-sm-6 col-lg-3">
                 <div className="h-100 border-0 bg-transparent">
-                  <div className="text-center p-4">
+                  <div className="text-center p-2">
                     <img
                       src={card.img}
                       alt="Feature icon"
@@ -81,15 +81,15 @@ function Features() {
             ))}
           </div>
         </div>
-        <div id="completed-features" className="container mt-5">
+        <div className="container pt-5 mt-5">
           <div className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn">Completed Features</span>
-            <h2 className="sec-heading mt-2">Completed Features</h2>
+            <h2 className="sec-heading">Completed Features</h2>
           </div>
-          <div className="row g-4 d-flex justify-content-center">
+          <div className="row d-flex justify-content-center">
             {completedFeatures.map((card) => (
-              <div key={card.id} className="comp-card col-md-6 mx-4 col-lg-3">
-                <div className="h-100 border-0 bg-transparent">
+              <div key={card.id} className="comp-card col-md-6 m-2 col-lg-3">
+                <div className="h-100 bg-transparent">
                   <div className="text-center p-4">
                     <img
                       src={card.img}

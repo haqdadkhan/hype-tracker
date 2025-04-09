@@ -1,18 +1,3 @@
-.self-btn {
-    background: transparent;
-    color: #01BDF8;
-    font-size: 0.9rem;
-    border: none;
-    padding: 6px 20px;
-    border-radius: 9999px; /* pill shape */
-    box-shadow: inset 0 0 4px 4px #0163D680;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-.self-btn:hover {
-    background: linear-gradient(#0163D680);
-}
-
 .sec-para {
     font-size: 18px;
     line-height: 1.6;

@@ -15,18 +15,17 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  // content
   return (
-    <div className="jost-normal" style={{ backgroundColor: "#0e0822" }}>
+    <>
       <Header />
       <Home />
       <About />
       <Features />
       <Tokenomics />
       <Upcoming />
-      <Roadmap/>
+      {/* <Roadmap/> */}
       <Footer />
-    </div>
+    </>
   );
 }
 

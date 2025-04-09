@@ -74,6 +74,7 @@ function Upcoming() {
     <>
       <section id="upcoming-features" className="py-5 mt-5">
         <div className="container">
+          {/* upside section  */}
           <div className="d-flex flex-column align-items-center">
             <div className="sec-width align-items-center text-center mb-5">
               <span className="self-btn">Features</span>
@@ -81,16 +82,15 @@ function Upcoming() {
               <p className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-
+          {/* upcoming features  */}
           {upcomingFeatures.map((feature) => (
-              <div key={feature.id} className="row mb-5 align-items-center flex-column flex-md-row">
-              <div className="col-md-5 up-card-img position-relative">
+            <div key={feature.id} className="row mb-5 align-items-center justify-content-between flex-column flex-md-row">
+              <div className="col-md-6 up-card-img position-relative">
                 <img
                   src={feature.img}
                   alt="Feature icon"
                   className="img-fluid rounded-3"
                 />
-                <span>{feature.id}</span>
               </div>
               <div className="col-md-6 px-md-5 align-self-center mt-4 mt-md-0">
                 <span className='self-btn'>Features</span>

@@ -11,15 +11,12 @@ function Header() {
 
   return (
     <>
-      <nav className="navbar sticky d-flex align-items-center justify-content-between">
+      <nav className="navbar d-flex align-items-center justify-content-between">
         <div className="logo-container">
           <img src={Logo} alt="Logo" className="logo-img" />
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <a className="nav-link" href="#home">
-            Home
-          </a>
           <a className="nav-link" href="#about">
             About
           </a>

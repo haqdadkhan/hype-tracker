@@ -19,21 +19,20 @@ function Tokenomics() {
           <h2 className="sec-heading mt-2">Hype Tracker Tokenomics</h2>
           <h3 className="blue-heading">Total Supply: 100M</h3>
         </div>
-        <div className="row d-flex justify-content-center">
-          {tokens.map((token) => (
-            <div
-              key={token.id}
-              className={`token-card ${
-                token.id === 1 ? 'left-radius' : token.id === 4 ? 'right-radius' : ''
-              } col-10 col-md-6 col-lg-3 m-2`}
-            >
-              <div className="h-100 bg-transparent text-center p-4">
-                <img src={token.img} alt="Feature icon" className="mb-4 token-img" />
-                <h3 className="card-title">{token.title}</h3>
-                <p className="card-text">{token.text}</p>
+          <div className="row d-flex justify-content-center">
+            {tokens.map((token) => (
+              <div
+                key={token.id}
+                className={`token-card ${token.id === 1 ? 'left-radius' : token.id === 4 ? 'right-radius' : ''
+                  } col-sm-y col-lg-3 m-2`}
+              >
+                <div className="bg-transparent text-center p-4">
+                  <img src={token.img} alt="Feature icon" className="mb-4 token-img" />
+                  <h3 className="card-title">{token.title}</h3>
+                  <p className="card-text">{token.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </section>

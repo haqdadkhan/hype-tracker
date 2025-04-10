@@ -1,17 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Logo from "../assets/logo.png";
 import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null); // For detecting outside clicks
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuOpen && navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
     <>
-      <nav className="navbar d-flex align-items-center justify-content-between">
+      <nav ref={navRef} className="navbar d-flex align-items-center justify-content-between">
         <div className="logo-container">
           <img src={Logo} alt="Logo" className="logo-img" />
         </div>
@@ -35,7 +49,7 @@ function Header() {
         </div>
 
         <div className="d-flex align-items-center">
-          <button className="btn btn-login">Buy Now</button>
+          <button className="nav-btn">Buy Now</button>
 
           <div className="menu-toggle" onClick={toggleMenu}>
             <span className="bar"></span>

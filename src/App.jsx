@@ -13,7 +13,10 @@ import Footer from "./Footer/Footer";
 function App() {
   // initializing AOS
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+      startEvent: 'DOMContentLoaded',
+    });
   }, []);
   return (
     <>
@@ -23,7 +26,7 @@ function App() {
       <Features />
       <Tokenomics />
       <Upcoming />
-      <Roadmap/>
+      <Roadmap />
       <Footer />
     </>
   );

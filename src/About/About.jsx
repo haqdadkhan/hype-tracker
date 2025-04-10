@@ -8,13 +8,13 @@ function About() {
       <section id="about" className="py-5 mt-5">
         <div className="container">
           <div className="row d-flex flex-column-reverse flex-lg-row text-white align-items-center">
-          <div className="col-lg-7 d-flex justify-content-center">
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="900" className="col-lg-7 d-flex justify-content-center">
               <img src={AboutImg} alt="About" className="about-img" />
             </div>
-            <div className="col-lg-5 text-center text-lg-start mt-4 mt-lg-0">
+            <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="col-lg-5 text-center text-lg-start mt-4 mt-lg-0">
               <span className="self-btn">About Us</span>
               <h1 className="sec-heading my-2">Introducing Hype Tracker</h1>
-              <p className="sec-para">
+              <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="900" className="sec-para">
                 Hype Tracker is a cutting-edge trading bot designed to give you
                 the ultimate edge in the market. It scans over 27,000+ trusted
                 KOL channels, tracks live Ethereum pairs, and integrates

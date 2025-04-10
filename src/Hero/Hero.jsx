@@ -68,12 +68,14 @@ function Hero() {
             <div className="platforms row g-3 g-md-4 mt-4 mt-md-5">
               {[P1, P2, P3, P4].map((platform, index) => (
                 <div key={index} className="col-6 col-md-3 d-flex justify-content-center">
-                  <img
-                    src={platform}
-                    className="img-fluid platform-img"
-                    alt={`Platform ${index + 1}`}
-                    style={{ maxHeight: '60px', width: 'auto' }}
-                  />
+                  <a href="#/" className='align-content-center'>
+                    <img
+                      src={platform}
+                      className="img-fluid platform-img"
+                      alt={`Platform ${index + 1}`}
+                      style={{ maxHeight: '60px', width: 'auto' }}
+                    />
+                  </a>
                 </div>
               ))}
             </div>

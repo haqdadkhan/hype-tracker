@@ -31,7 +31,7 @@
   color: #a0a0ff;
 }
 
-.btn-login {
+.nav-btn {
   background: linear-gradient(#208CBE, #0C304D);
   border: none;
   border-radius: 30px;
@@ -42,9 +42,11 @@
   box-shadow: 0 4px 56px 3px #1DA1ED59;
 }
 
-.btn-login:hover {
-  background: linear-gradient(#33AADD, #2176FF);
+.nav-btn:hover {
+  background: linear-gradient(#07CDFF, #0E8BFF);
   color: white;
+  box-shadow: 0 4px 56px 3px rgba(98, 29, 237, 0.35);
+  transition: all 0.3s;
 }
 
 /* Hamburger menu button */
@@ -72,7 +74,7 @@
   .nav-links {
     position: absolute;
     top: 80px;
-    right: 44px;
+    right: 52px;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;

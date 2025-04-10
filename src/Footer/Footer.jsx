@@ -4,6 +4,7 @@ import x from "../assets/footer/x.svg"
 import telegram from "../assets/footer/telegram.svg"
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="overflow-hidden">
       <div className="container">
@@ -76,7 +77,7 @@ function Footer() {
 
         {/* Copyright */}
         <div className='text-center py-2'>
-          <span className='copyright'>Copyright &copy; 2024 Hype Tracker. All Rights Reserved</span>
+          <span className='copyright'>Copyright &copy; {currentYear} Hype Tracker. All Rights Reserved</span>
         </div>
       </div>
     </footer>

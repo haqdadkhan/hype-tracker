@@ -14,20 +14,36 @@ import P3 from "../assets/home/dextools.png"
 import P4 from "../assets/home/coinmarketcap.png"
 
 function Hero() {
+  {/* <div className="hero-abs">
+  <img src={Dots} alt="" className="white-dots" />
+  </div> */}
   return (
     <>
       <section id='home' className='hero-section'>
         {/* Upside Section with decorative elements */}
-        <div data-aos="fade-up" className="upside">
-          <div className="upside-container position-relative">
-            <img src={LargeEclipse} alt="" className="position-absolute eclipse-large" />
-            <img src={ShortEclipse} alt="" className="position-absolute eclipse-short" />
-            <img src={BlueEclipse} alt="" className="position-absolute blue-dots" />
-            <img src={GreenEclipse} alt="" className="position-absolute green-dots" />
-            <img src={PurpleCircle} alt="" className="position-absolute purple-circle" />
-            <img src={BlueCircle} alt="" className="position-absolute blue-circle" />
-            <img src={Dots} alt="" className="position-absolute white-dots" />
-            <img src={Logo} alt="Logo" className="position-absolute logo" />
+        <div className="upside container">
+          <div className="upside-container">
+            <div className="hero-abs">
+              <img src={LargeEclipse} alt="" className="eclipse-large" />
+            </div>
+            <div className="hero-abs">
+              <img src={ShortEclipse} alt="" className="eclipse-short" />
+            </div>
+            <div className="hero-abs">
+              <img src={BlueEclipse} alt="" className="blue-dots" />
+            </div>
+            <div className="hero-abs">
+              <img src={GreenEclipse} alt="" className="green-dots" />
+            </div>
+            <div className="hero-abs">
+              <img src={PurpleCircle} alt="" className="purple-circle" />
+            </div>
+            <div className="hero-abs">
+              <img src={BlueCircle} alt="" className="blue-circle" />
+            </div>
+            <div className="hero-abs">
+              <img src={Logo} alt="Logo" className="logo" />
+            </div>
           </div>
         </div>
 

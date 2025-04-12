@@ -12,29 +12,29 @@ function SubBanner() {
                 <div className="container">
                     {/* Top Text Row */}
                     <div className="row justify-content-between mb-4 mb-md-5">
-                        <div className="col-4 col-md-6 mb-3 mb-md-0 text-center text-md-start">
+                        <div className="col-5 mb-3 mb-md-0 text-center text-md-start">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
                             </p>
                         </div>
-                        <div className="col-4 col-md-6 text-center text-md-end">
+                        <div className="col-5 text-center text-md-end">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis autem pariatur totam.
                             </p>
                         </div>
                     </div>
 
-                    {/* Hero Content */}
-                    <div className='hero-content text-center px-2 px-md-0'>
-                        <h1 className='hero-heading my-4 my-md-5 display-4 display-md-3 fw-bold'>
+                    {/* banner Content */}
+                    <div className='banner-content text-center px-2 px-md-0'>
+                        <h1 className='banner-heading my-4 my-md-5 display-4 display-md-3 fw-bold'>
                             Empowering Your Crypto <br className="d-none d-md-block" />
                             <span className="text-primary">Trading Experience</span>
                         </h1>
                         <div className="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center">
-                            <button className='hero-btn px-4 py-2 px-md-5 py-md-3'>
+                            <button className='banner-btn px-4 py-2 px-md-5 py-md-3'>
                                 Try the Bot
                             </button>
-                            <button className='hero-btn-w px-4 py-2 px-md-5 py-md-3'>
+                            <button className='banner-btn-w px-4 py-2 px-md-5 py-md-3'>
                                 Buy Now
                             </button>
                         </div>

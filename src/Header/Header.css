@@ -4,10 +4,13 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  display: flex;
+  justify-content: center; /* Center navbar contents */
+  align-items: center;
 }
 
 .logo-img {
-  height: 50px;
+  width: 70px;
 }
 
 .nav-links {
@@ -19,6 +22,7 @@
   gap: 30px;
   backdrop-filter: blur(7px);
   transition: all 0.3s ease;
+  margin: 0 auto; /* Center the nav-links */
 }
 
 .nav-link {
@@ -69,20 +73,25 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 10px;
+    justify-content: space-between;
   }
 
   .nav-links {
     position: absolute;
     top: 80px;
-    right: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
-    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 20px;
     display: none;
     backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0;
   }
 
   .nav-links.active {
@@ -99,6 +108,6 @@
   }
 
   .logo-img {
-    height: 40px;
+    width: 60px;
   }
 }

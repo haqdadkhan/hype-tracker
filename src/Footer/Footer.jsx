@@ -10,12 +10,12 @@ function Footer() {
       <div className="container">
         {/* Top Section */}
         <div className="p-3 p-md-5 before-footer mb-4 mb-md-5">
-          <div className="row ">
-            <div className="col-12 col-md-6 left-side mb-4 mb-md-0">
+          <div className="row">
+            <div className="col-12 col-md-6 left-side align-content-center justify-content-md-center text-center text-md-start mb-4 mb-md-0">
               <p className="join-title">Join Us <span>Today!</span></p>
               <p className="join-subtitle">Stay connected with us by joining us on our socials!</p>
             </div>
-            <div className="col-12 col-md-6 d-flex flex-column gap-3 align-content-center justify-content-md-center align-items-md-end">
+            <div className="col-12 col-md-6 d-flex flex-column gap-3 align-content-center justify-content-md-center align-items-center align-items-md-start text-center text-md-start align-items-md-end">
               <button className='footer-btn'>Join Community</button>
               <button className='footer-btn-w'>Buy Now</button>
             </div>

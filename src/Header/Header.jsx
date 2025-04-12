@@ -27,7 +27,9 @@ function Header() {
     <>
       <nav ref={navRef} className="navbar d-flex align-items-center justify-content-between">
         <div className="logo-container">
-          <img src={Logo} alt="Logo" className="logo-img" />
+          <a href="/">
+            <img src={Logo} alt="Logo" className="logo-img" />
+          </a>
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>

@@ -57,6 +57,7 @@ function Features() {
   return (
     <>
       <section id="features" className="py-5 mt-5">
+        {/* key features  */}
         <div className="container">
           <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn mb-2">Key Features</span>
@@ -81,6 +82,7 @@ function Features() {
             ))}
           </div>
         </div>
+        {/* completed features  */}
         <div id="completed-features" className="container pt-5 mt-5">
           <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="d-flex flex-column align-items-center mb-5">
             <span className="self-btn mb-2">Completed Features</span>
@@ -88,7 +90,7 @@ function Features() {
           </div>
           <div className="row d-flex justify-content-center gap-5">
             {completedFeatures.map((card) => (
-              <div data-aos="fade-left" data-aos-delay={100 * card.id} data-aos-duration="900" key={card.id} className="comp-card col-sm-6 col-lg-3">
+              <div data-aos="fade-up" data-aos-delay={100 * card.id} data-aos-duration="900" key={card.id} className="comp-card col-sm-6 col-lg-3">
                 <div className="h-100 bg-transparent">
                   <div className="text-center p-4">
                     <img

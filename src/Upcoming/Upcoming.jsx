@@ -77,10 +77,10 @@ function Upcoming() {
         <div className="container">
           {/* upside section  */}
           <div className="d-flex flex-column align-items-center">
-            <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="sec-width align-items-center text-center mb-5">
+            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="700" className="sec-width align-items-center text-center mb-5">
               <span className="self-btn">Upcoming Features</span>
               <h2 className='sec-heading mt-2'>Hype Tracker <br />Upcoming Features</h2>
-              <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="900" className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
           {/* upcoming features  */}
@@ -89,14 +89,14 @@ function Upcoming() {
               onMouseEnter={() => { setShadow(feature.id) }} onMouseLeave={() => { setShadow(null) }}
               key={feature.id}
               className="row up-card mb-4 mb-md-5 align-items-center justify-content-between text-center text-md-start flex-column flex-md-row">
-              <div data-aos="zoom-in-up" data-aos-delay={100 * feature.id} data-aos-duration="900" className="up-card-img col-md-6 position-relative">
+              <div data-aos="zoom-in-up"data-aos-duration="700" className="up-card-img col-md-6 position-relative">
                 <img
                   src={feature.img}
                   alt="Feature icon"
                   className={shadow === feature.id ? "img" : ""}
                 />
               </div>
-              <div data-aos="zoom-in-up" data-aos-delay={100 * feature.id} data-aos-duration="900" className="col-md-6 px-md-5 align-self-center mt-2 mt-md-4">
+              <div data-aos="zoom-in-up"data-aos-duration="700" className="col-md-6 px-md-5 align-self-center mt-2 mt-md-4">
                 <span className='self-btn d-none d-md-inline'>Features</span>
                 <h2 className='feat-heading mt-2 mt-md-3'>{feature.title}</h2>
                 <p className="mt-3 sec-para">{feature.content}</p>

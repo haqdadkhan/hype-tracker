@@ -1,11 +1,11 @@
 import React from "react";
-import Hero from "./Hero/Hero";
+import Banner from "./Banner/Banner";
 import SubBanner from "./SubBanner/SubBanner";
 
 function Home() {
   return (
     <>
-      <Hero />
+      <Banner />
       <SubBanner/>
     </>
   );

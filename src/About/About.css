@@ -9,6 +9,16 @@
   width: 100%;
   max-width: 690px;
   height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+/* animation  */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 @media (max-width: 991px) {

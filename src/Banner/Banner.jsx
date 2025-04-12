@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Hero.css"
+import "./Banner.css"
 import LargeEclipse from "../assets/home/eclipse-circle-large.png"
 import ShortEclipse from "../assets/home/eclipse-circle-short.png"
 import BlueEclipse from "../assets/home/blue-dots.png"
@@ -9,35 +9,35 @@ import BlueCircle from "../assets/home/blue-circle.png"
 import Logo from "../assets/logo.png"
 
 
-function Hero() {
-  {/* <div className="hero-abs">
+function banner() {
+  {/* <div className="banner-abs">
   <img src={Dots} alt="" className="white-dots" />
   </div> */}
   return (
     <>
-      <section id='home' className='hero-section'>
+      <section id='home' className='banner-section'>
         {/* Upside Section with decorative elements */}
         <div className="upside container">
           <div className="upside-container">
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={LargeEclipse} alt="" className="eclipse-large" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={ShortEclipse} alt="" className="eclipse-short" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={BlueEclipse} alt="" className="blue-dots" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={GreenEclipse} alt="" className="green-dots" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={PurpleCircle} alt="" className="purple-circle" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={BlueCircle} alt="" className="blue-circle" />
             </div>
-            <div className="hero-abs">
+            <div className="banner-abs">
               <img src={Logo} alt="Logo" className="logo" />
             </div>
           </div>
@@ -50,4 +50,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default banner

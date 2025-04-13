@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Banner.css"
-import LargeEclipse from "../assets/home/eclipse-circle-large.png"
-import ShortEclipse from "../assets/home/eclipse-circle-short.png"
-import BlueEclipse from "../assets/home/blue-dots.png"
-import GreenEclipse from "../assets/home/green-dots.png"
-import PurpleCircle from "../assets/home/purple-circle.png"
-import BlueCircle from "../assets/home/blue-circle.png"
-import Logo from "../assets/logo.png"
+import LargeEclipse from "../../../assets/home/eclipse-circle-large.png"
+import ShortEclipse from "../../../assets/home/eclipse-circle-short.png"
+import BlueEclipse from "../../../assets/home/blue-dots.png"
+import GreenEclipse from "../../../assets/home/green-dots.png"
+import PurpleCircle from "../../../assets/home/purple-circle.png"
+import BlueCircle from "../../../assets/home/blue-circle.png"
+import Logo from "../../../assets/logo.png"
 
 
 function banner() {

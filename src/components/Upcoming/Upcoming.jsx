@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import "./Upcoming.css"
-import F1 from "../assets/upcoming/feature-1.png";
-import F2 from "../assets/upcoming/feature-2.png";
-import F3 from "../assets/upcoming/feature-3.png";
-import F4 from "../assets/upcoming/feature-4.png";
-import F5 from "../assets/upcoming/feature-5.png";
-import F6 from "../assets/upcoming/feature-6.png";
-import F7 from "../assets/upcoming/feature-7.png";
-import F8 from "../assets/upcoming/feature-8.png";
+import F1 from "../../assets/upcoming/feature-1.png";
+import F2 from "../../assets/upcoming/feature-2.png";
+import F3 from "../../assets/upcoming/feature-3.png";
+import F4 from "../../assets/upcoming/feature-4.png";
+import F5 from "../../assets/upcoming/feature-5.png";
+import F6 from "../../assets/upcoming/feature-6.png";
+import F7 from "../../assets/upcoming/feature-7.png";
+import F8 from "../../assets/upcoming/feature-8.png";
 
 // upcoming features
 const upcomingFeatures = [

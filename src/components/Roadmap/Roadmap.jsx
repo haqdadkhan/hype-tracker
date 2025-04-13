@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Roadmap.css";
-import P1 from "../assets/roadmap/roadmap-img1.png";
-import P2 from "../assets/roadmap/roadmap-img2.png";
-import P3 from "../assets/roadmap/roadmap-img3.png";
-import P4 from "../assets/roadmap/roadmap-img4.png";
-import arrow from "../assets/roadmap/roadmap-arrow.png";
-import framer from "../assets/roadmap/roadmap-framer.png";
+import P1 from "../../assets/roadmap/roadmap-img1.png";
+import P2 from "../../assets/roadmap/roadmap-img2.png";
+import P3 from "../../assets/roadmap/roadmap-img3.png";
+import P4 from "../../assets/roadmap/roadmap-img4.png";
+import arrow from "../../assets/roadmap/roadmap-arrow.png";
+import framer from "../../assets/roadmap/roadmap-framer.png";
 
 const roadmaps = [
   {

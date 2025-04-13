@@ -1,6 +1,6 @@
 /* ---Upside Section */
 .upside {
-  background-image: url(../assets/home/white-dots.png), url(../assets/home/white-dots.png);
+  background-image: url(../../assets/home/white-dots.png), url(../../assets/home/white-dots.png);
   background-position: right contain, left contain;
   background-repeat: no-repeat, repeat;
 }
@@ -220,7 +220,7 @@
 
 /* --- Downside Section */
 .downside {
-  background: url(../assets/home/home-bg.png) no-repeat;
+  background: url(../../assets/home/home-bg.png) no-repeat;
   background-size: cover;
   padding: 8rem 0rem;
   position: relative;

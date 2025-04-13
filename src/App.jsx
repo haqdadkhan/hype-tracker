@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Home from "./Home";
-import Features from "./Features/Features";
-import Header from "./Header/Header";
-import About from "./About/About";
-import Tokenomics from "./Tokenomics/Tokenomics";
-import Upcoming from "./Upcoming/Upcoming";
-import Roadmap from "./Roadmap/Roadmap";
-import Footer from "./Footer/Footer";
+import Home from "./components/Home/Home";
+import Features from "./components/Features/Features";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Tokenomics from "./components/Tokenomics/Tokenomics";
+import Upcoming from "./components/Upcoming/Upcoming";
+import Roadmap from "./components/Roadmap/Roadmap";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   // initializing AOS

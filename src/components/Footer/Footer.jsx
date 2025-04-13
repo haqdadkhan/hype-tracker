@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
-import x from "../assets/footer/x.svg"
-import telegram from "../assets/footer/telegram.svg"
+import x from "../../assets/footer/x.svg"
+import telegram from "../../assets/footer/telegram.svg"
 
 function Footer() {
   const currentYear = new Date().getFullYear();

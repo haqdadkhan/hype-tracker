@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Tokenomics.css"
-import dollar from "../assets/tokenomics/dollar.png"
+import dollar from "../../assets/tokenomics/dollar.png"
 
 // tokens
 const tokens = [

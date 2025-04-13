@@ -1,9 +1,9 @@
 import React from 'react'
 import "./SubBanner.css"
-import P1 from "../assets/home/uniswap.png"
-import P2 from "../assets/home/etherscan.png"
-import P3 from "../assets/home/dextools.png"
-import P4 from "../assets/home/coinmarketcap.png"
+import P1 from "../../../assets/home/uniswap.png"
+import P2 from "../../../assets/home/etherscan.png"
+import P3 from "../../../assets/home/dextools.png"
+import P4 from "../../../assets/home/coinmarketcap.png"
 
 function SubBanner() {
     return (

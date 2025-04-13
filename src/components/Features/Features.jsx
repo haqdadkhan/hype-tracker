@@ -1,10 +1,10 @@
 import React from "react";
 import "./Features.css"
-import F1 from "../assets/features/feature-1.png";
-import F2 from "../assets/features/feature-2.png";
-import F3 from "../assets/features/feature-3.png";
-import F4 from "../assets/features/feature-4.png";
-import done from "../assets/features/done.png"
+import F1 from "../../assets/features/feature-1.png";
+import F2 from "../../assets/features/feature-2.png";
+import F3 from "../../assets/features/feature-3.png";
+import F4 from "../../assets/features/feature-4.png";
+import done from "../../assets/features/done.png"
 
 // key features
 const featureCards = [

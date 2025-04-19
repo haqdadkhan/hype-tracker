@@ -45,37 +45,39 @@ const roadmaps = [
 function Roadmap() {
   return (
     <>
-      <section id="roadmap" className="mb-5">
-        <div className="container">
-          <div className="d-flex flex-column align-items-center">
-            <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="sec-width align-items-center text-center mb-5">
-              <span className="self-btn">Roadmap</span>
-              <h2 className='sec-heading mt-2'>Hype Tracker Journey</h2>
-              <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="900" className='sec-para'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
+      <section id="roadmap" className="mb-5 position-relative">
+        <div className="roadmap">
+          <div className="container">
+            <div className="d-flex flex-column align-items-center">
+              <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="900" className="sec-width align-items-center text-center mb-5">
+                <span className="self-btn">Roadmap</span>
+                <h2 className='sec-heading mt-2'>Hype Tracker Journey</h2>
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="900" className='sec-para'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
             </div>
-          </div>
-          <div  data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" className="roadmap-phases">
-            {roadmaps.map((roadmap) => (
-              <div
-                key={roadmap.id}
-                className={`phase ${roadmap.class} abs floating-element`}
-                style={{ animationDelay: roadmap.animationDelay }}
-              >
-                <div>
-                  <img src={roadmap.img} alt="Roadmap Img" />
-                  <div className="arrow abs">
-                    <img src={arrow} alt="" />
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" className="roadmap-phases">
+              {roadmaps.map((roadmap) => (
+                <div
+                  key={roadmap.id}
+                  className={`phase ${roadmap.class} abs floating-element`}
+                  style={{ animationDelay: roadmap.animationDelay }}
+                >
+                  <div>
+                    <img src={roadmap.img} alt="Roadmap Img" />
+                    <div className="arrow abs">
+                      <img src={arrow} alt="" />
+                    </div>
+                  </div>
+                  <div style={roadmap.id % 2 === 0 ? { paddingRight: 6 } : { paddingLeft: 6 }}>
+                    <span><img src={framer} alt="Frame Icon" /></span>
+                    <h5>{roadmap.title}</h5>
+                    <p>{roadmap.content}</p>
                   </div>
                 </div>
-                <div style={roadmap.id % 2 === 0 ? { paddingRight: 6 } : { paddingLeft: 6 }}>
-                  <span><img src={framer} alt="Frame Icon" /></span>
-                  <h5>{roadmap.title}</h5>
-                  <p>{roadmap.content}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

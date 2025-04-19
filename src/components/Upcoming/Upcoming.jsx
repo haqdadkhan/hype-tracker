@@ -77,7 +77,7 @@ function Upcoming() {
         <div className="container">
           {/* upside section  */}
           <div className="d-flex flex-column align-items-center">
-            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="700" className="sec-width align-items-center text-center mb-5">
+            <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="700" className="sec-width upcoming-bg align-items-center text-center mb-5">
               <span className="self-btn">Upcoming Features</span>
               <h2 className='sec-heading mt-2'>Hype Tracker <br />Upcoming Features</h2>
               <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" className='sec-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

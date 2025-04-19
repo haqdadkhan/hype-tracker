@@ -1,3 +1,14 @@
+.roadmap::after {
+    content: "";
+    position: absolute;
+    background: url(../../assets/roadmap/roadmap-after.png) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 110%;
+    top: -80px;
+    right: 0;
+}
+
 .roadmap-phases {
     position: relative;
     height: 590px;

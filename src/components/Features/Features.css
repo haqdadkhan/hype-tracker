@@ -1,3 +1,26 @@
+.key-features::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: url(../../assets/features/key-features-after.png) no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.completed-features::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  left: 0;
+  top: 0px;
+  background: url(../../assets/features/completed-features-before.png) no-repeat;
+  background-size: contain;
+}
+
 .feature-card {
   width: 100%;
   max-width: 240px;
@@ -63,5 +86,17 @@
 
   .comp-text {
     font-size: 16px;
+  }
+
+  .completed-features::before {
+    width: 400px;
+    top: 100px;
+  }
+}
+
+@media (max-width:405px) {
+  .completed-features::before {
+    width: 300px;
+    top: 150px;
   }
 }

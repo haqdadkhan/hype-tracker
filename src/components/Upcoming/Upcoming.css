@@ -3,6 +3,12 @@
     max-width: 100%;
 }
 
+.upcoming-bg {
+    background: url(../../assets/upcoming/upcoming-features-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .sec-para {
     font-size: 16px;
     font-weight: 300;
